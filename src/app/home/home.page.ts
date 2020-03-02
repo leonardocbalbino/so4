@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+// import { NavController} from '@ionic/angular';
+import { AuthService } from '../core/services/auth.service';
+
 
 @Component({
   selector: 'app-home',
@@ -7,6 +10,13 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  constructor() {}
 
+   constructor(private authService: AuthService) {
+   }
+
+
+
+  // openViewRecarga(){
+  //   this.navCtrl.push(ViewRecargaPage, {}, {animate: true} );    
+  // }
 }
